@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>modernkitchen</title>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" type="image/png">
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <p>Cocinas de diseño</p>
+
+        <nav id="menu">
+            <div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="#quienessomos" onclick="closeMenu()">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a href="#disenios" onclick="closeMenu()">Nuestros diseños</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" onclick="closeMenu()">Contáctanos</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i class="fas fa-search"></i>
+                <i class="far fa-star"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h1>
+                <a href="#"><span class="logo">modern<strong>kitchen</strong></span></a>
+            </h1>
+        </nav>
+    </header>
+    <section id="quienessomos">
+        <div>
+            <figure>
+                <img src="img/quienessomos1.jpg" alt="Hombre midiendo trozo de madera">
+            </figure>
+            <figure>
+                <img src="img/quienessomos2.jpg" alt="Tablas de madera">
+            </figure>
+        </div>
+        <div>
+            <h2><span class="logo">modern<strong>kitchen</strong></span></h2>
+            <p>Nuestra tienda de cocinas modernas combina diseño contemporáneo, funcionalidad y materiales de alta calidad para crear espacios únicos adaptados a cada estilo de vida. Apostamos por líneas limpias, soluciones ergonómicas y tecnología integrada, donde la estética minimalista se une a la comodidad diaria. Cada proyecto se personaliza con atención al detalle, desde la selección de acabados hasta la iluminación y los accesorios.</p>
+            <p>Trabajamos con marcas de vanguardia y procesos sostenibles, ofreciendo asesoramiento experto en distribución, color y equipamiento. Nuestro objetivo es transformar la cocina en el corazón del hogar: un espacio elegante, práctico y duradero que refleje la personalidad y las necesidades de cada cliente.</p>
+        </div>
+    </section>
+    <section id="disenios">
+        <h2>Nuestros diseños</h2>
+        <div>
+            <figure onclick="openModal(this)">
+                <img src="img/cocina1.jpg" alt="">
+                <figcaption>
+                    <h3>Modelos en 3D</h3>
+                    <p>Para que te hagas una idea de cómo va a quedar tu cocina, nuestros diseñadores crean modelos en 3D realistas que te permitirán comenzar a enamorarte de tu nueva cocina.</p>
+                </figcaption>
+            </figure>
+            <figure onclick="openModal(this)">
+                <img src="img/cocina2.jpg" alt="">
+                <figcaption>
+                    <h3>Diversidad de estilos</h3>
+                    <p>Tanto si sueñas con una cocina moderna o prefieres el encanto del estilo rústico, tenemos soluciones personalizadas para ti.</p>
+                </figcaption>
+            </figure>
+            <figure onclick="openModal(this)">
+                <img src="img/cocina3.jpg" alt="">
+                <figcaption>
+                    <h3>Fusión de distintos materiales</h3>
+                    <p>Somos capaces de hacer composiones que estén formadas por materiales naturales y sintéticos, siempre dando continuidad al diseño de tu cocina.</p>
+                </figcaption>
+            </figure>
+            <figure onclick="openModal(this)">
+                <img src="img/cocina4.jpg" alt="Vista frontal de cocina moderna">
+                <figcaption>
+                    <h3>Elegancia en cada detalle</h3>
+                    <p>Desde cualquier ángulo se puede apreciar que para nuestras cocinas elegimos hasta el más mínimo detalle para generar un estilo elegante y funcional que te permita disfrutar de cada momento que estés en ella.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4340909635685!2d-3.6918181843499744!3d40.46566066058558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422910ef6fc339%3A0xe4a84655e86fb1da!2sPl.%20Castilla%2C%2028046%20Madrid!5e0!3m2!1ses!2ses!4v1655895302389!5m2!1ses!2ses" loading="lazy"></iframe>
+            <figure>
+                <img src="img/contacto.jpg" alt="Nuestra fábrica en Madrid">
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <p>Imágenes extraías de Freepik:</p>
+        <p><a href='https://www.freepik.es/fotos/maqueta-casa'>Foto de maqueta casa creado por vanitjan - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/carpinteria'>Foto de carpinteria creado por freepik - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/vocacion'>Foto de vocación creado por freepik - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/parque-industrial'>Foto de parque industrial creado por 4045 - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/interior-cocina'>Foto de interior cocina creado por kjpargeter - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/cocina-moderna'>Foto de cocina moderna creado por wirestock - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/interior-cocina'>Foto de interior cocina creado por wirestock - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/cocina-moderna'>Foto de cocina moderna creado por wirestock - www.freepik.es</a></p>
+        <p><a href='https://www.freepik.es/fotos/muebles-cocina'>Foto de muebles de cocina creado por freepik - www.freepik.es</a></p>
+    </footer>
+
+    <!-- Ventana modal -->
+    <div id="modal">
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+    </div>
+
+</body></html>
