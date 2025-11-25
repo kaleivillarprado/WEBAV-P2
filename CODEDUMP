@@ -1,0 +1,27 @@
+/*FOR BACKGROUND REPETITON source: hotglue.me
+element.style {
+    background-image: url(https://hotglue.me/?start.head.130590745736);
+    background-repeat: repeat;
+    height: 601px;
+    left: 7px;
+    position: absolute;
+    top: 874px;
+    width: 1161px;
+    z-index: 80;
+}
+
+
+/*logo bottom right corner
+<h1>
+                <a href="#"><span class="logo">modern<strong>kitchen</strong></span></a>
+            </h1>
+            
+.logo {
+    font-family: var(--fuente-titulos);
+    font-weight: normal;
+}
+
+.logo > strong {
+    font-family: var(--fuente-titulos);
+    font-weight: bold;
+}
