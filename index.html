@@ -3,12 +3,13 @@
 <html lang="es">
 
 <head>
-    <title>Madriz en Chikito</title>
+    <title>Madriz Local</title>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="img/favicon.png" rel="icon" type="image/png">
     <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -18,20 +19,23 @@
 
 <body>
     <header>
-        <p class="titol">Madriz en Chikito</p>
+        <p class="titol">Madriz Local</p>
 
         <nav id="menu">
             <div>
                 <i class="fas fa-bars" onclick="openMenu()"></i>
                 <ul>
                     <li>
-                        <a href="#quienessomos" onclick="closeMenu()">Quiénes somos</a>
+                        <a href="#madriz" onclick="closeMenu()">Madriz Local</a>
                     </li>
                     <li>
-                        <a href="#disenios" onclick="closeMenu()">Nuestros diseños</a>
+                        <a href="#cultura" onclick="closeMenu()">Cultura</a>
                     </li>
                     <li>
-                        <a href="#contacto" onclick="closeMenu()">Contáctanos</a>
+                        <a href="#gastro" onclick="closeMenu()">Gastro</a>
+                    </li>
+                    <li>
+                        <a href="#comercio" onclick="closeMenu()">Comercio</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
@@ -46,7 +50,7 @@
             
         </nav>
     </header>
-    <section id="quienessomos">
+    <section id="madriz">
         <div>
             <figure>
                 <img src="img/castellana.png" alt="Hombre midiendo trozo de madera">
@@ -56,30 +60,32 @@
             </figure>
         </div>
         <div>
-            <h2><span class="logo">modern<strong>kitchen</strong></span></h2>
-            <p>Nuestra tienda de cocinas modernas combina diseño contemporáneo, funcionalidad y materiales de alta calidad para crear espacios únicos adaptados a cada estilo de vida. Apostamos por líneas limpias, soluciones ergonómicas y tecnología integrada, donde la estética minimalista se une a la comodidad diaria. Cada proyecto se personaliza con atención al detalle, desde la selección de acabados hasta la iluminación y los accesorios.</p>
-            <p>Trabajamos con marcas de vanguardia y procesos sostenibles, ofreciendo asesoramiento experto en distribución, color y equipamiento. Nuestro objetivo es transformar la cocina en el corazón del hogar: un espacio elegante, práctico y duradero que refleje la personalidad y las necesidades de cada cliente.</p>
+            <h2><span class="logo">Madriz<strong>Local</strong></span></h2>
+            <p>Madriz Local presenta una alternativa de  Madrid centrada en lo local <strong>de verdad</strong> que ayuda al desarrollo
+            de proyectos independientes y autogestionados por la comunidad.</p>
+            <p>Desde Madriz Local nos posicionamos activamente <strong>contra la gentrificación</strong> sin sacrificar el ocio, enfocando nuestro proyecto de una manera
+            consciente con lo local, quienes lo habitan y su entorno.</p>
         </div>
     </section>
-    <section id="disenios">
-        <h2>Nuestros diseños</h2>
+    <section id="cultura">
+        <h2>Cultura</h2>
         <div>
             <figure onclick="openModal(this)">
-                <img src="img/cocina1.jpg" alt="">
+                <img src="img/tortuga.png" alt="">
                 <figcaption>
                     <h3>Modelos en 3D</h3>
                     <p>Para que te hagas una idea de cómo va a quedar tu cocina, nuestros diseñadores crean modelos en 3D realistas que te permitirán comenzar a enamorarte de tu nueva cocina.</p>
                 </figcaption>
             </figure>
             <figure onclick="openModal(this)">
-                <img src="img/cocina2.jpg" alt="">
+                <img src="img/graf1.png" alt="">
                 <figcaption>
                     <h3>Diversidad de estilos</h3>
                     <p>Tanto si sueñas con una cocina moderna o prefieres el encanto del estilo rústico, tenemos soluciones personalizadas para ti.</p>
                 </figcaption>
             </figure>
             <figure onclick="openModal(this)">
-                <img src="img/cocina3.jpg" alt="">
+                <img src="img/semaforo.png" alt="">
                 <figcaption>
                     <h3>Fusión de distintos materiales</h3>
                     <p>Somos capaces de hacer composiones que estén formadas por materiales naturales y sintéticos, siempre dando continuidad al diseño de tu cocina.</p>
@@ -94,8 +100,8 @@
             </figure>
         </div>
     </section>
-    <section id="contacto">
-        <h2>Contáctanos</h2>
+    <section id="gastro">
+        <h2>Gastro</h2>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.4340909635685!2d-3.6918181843499744!3d40.46566066058558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422910ef6fc339%3A0xe4a84655e86fb1da!2sPl.%20Castilla%2C%2028046%20Madrid!5e0!3m2!1ses!2ses!4v1655895302389!5m2!1ses!2ses" loading="lazy"></iframe>
             <figure>
@@ -103,17 +109,23 @@
             </figure>
         </div>
     </section>
+    <section id="comercio">
+        <div>
+            <figure>
+                <img src="img/castellana.png" alt="Hombre midiendo trozo de madera">
+            </figure>
+            <figure>
+                <img src="img/mayor-ojo.jpg" alt="Tablas de madera">
+            </figure>
+        </div>
+        <div>
+            <h2>Comercio</h2>
+            <p>Nuestra tienda de cocinas modernas combina diseño contemporáneo, funcionalidad y materiales de alta calidad para crear espacios únicos adaptados a cada estilo de vida. Apostamos por líneas limpias, soluciones ergonómicas y tecnología integrada, donde la estética minimalista se une a la comodidad diaria. Cada proyecto se personaliza con atención al detalle, desde la selección de acabados hasta la iluminación y los accesorios.</p>
+            <p>Trabajamos con marcas de vanguardia y procesos sostenibles, ofreciendo asesoramiento experto en distribución, color y equipamiento. Nuestro objetivo es transformar la cocina en el corazón del hogar: un espacio elegante, práctico y duradero que refleje la personalidad y las necesidades de cada cliente.</p>
+        </div>
+    </section>
     <footer>
-        <p>Imágenes extraías de Freepik:</p>
-        <p><a href='https://www.freepik.es/fotos/maqueta-casa'>Foto de maqueta casa creado por vanitjan - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/carpinteria'>Foto de carpinteria creado por freepik - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/vocacion'>Foto de vocación creado por freepik - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/parque-industrial'>Foto de parque industrial creado por 4045 - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/interior-cocina'>Foto de interior cocina creado por kjpargeter - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/cocina-moderna'>Foto de cocina moderna creado por wirestock - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/interior-cocina'>Foto de interior cocina creado por wirestock - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/cocina-moderna'>Foto de cocina moderna creado por wirestock - www.freepik.es</a></p>
-        <p><a href='https://www.freepik.es/fotos/muebles-cocina'>Foto de muebles de cocina creado por freepik - www.freepik.es</a></p>
+        
     </footer>
 
     <!-- Ventana modal -->
