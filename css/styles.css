@@ -22,23 +22,6 @@
     scroll-behavior: smooth;
 }
 
-#cultura > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-#cultura > div > figure {
-    flex: 45%;
-    cursor: pointer;
-
-}
-
-#cultura > div > figure > figcaption {
-    display: none;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -53,19 +36,6 @@ footer > p:not(:first-child) {
 footer > p > a {
     color: white;
     text-decoration: none;
-}
-
-
-#gastro > div {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-#gastro > div > * {
-    width: 45%;
-    max-width: 800px;
-    filter: grayscale(100%);
 }
 
 h1 > a,
@@ -106,6 +76,50 @@ img {
     width: 100%;
     vertical-align: middle;
 }
+
+
+#items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#items > div {
+    width: 100%;
+    margin: 1em;
+    display: flex;
+    padding: 2em 0;
+}
+
+#items > div > figure {
+    width: 100%;
+    position: relative;
+    margin: 2em;
+    cursor: pointer;
+}
+
+#items > h4 {
+    color: darkred;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: 550;
+  color: darkred;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  mix-blend-mode:hard-light;
+  font-size: 2em;
+  text-align: center;
+}
+
 .logo {
     font-family: var(--fuente-titulos);
     font-weight: normal;
@@ -196,6 +210,10 @@ section {
     max-width: 1500px;
     padding: 4em;
     margin: 0 auto;
+}
+
+section > div > #items > div{
+    margin: 2em;
 }
 
 #modal {

@@ -9,4 +9,6 @@ https://www.pexels.com/search/videos/madrid/
 https://pixabay.com/photos/search/madrid/
 https://www.pexels.com/search/madrid/
 
+CCC QUINTA: Laurent lopez Gardey
+SWINTON: Museo Directorio
 
