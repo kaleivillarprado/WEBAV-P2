@@ -1,11 +1,21 @@
-/**
- * Abre el menú
- */
-function openMenu(){
-    $("#menu > div > ul").css("left", "0");
-}
+const sidebar = document.getElementById("sidebar");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
 
+openBtn.onclick = () => {
+    sidebar.classList.add("active");
+};
 
+closeBtn.onclick = () => {
+    sidebar.classList.remove("active");
+};
+
+// Close sidebar when clicking outside (optional)
+document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !openBtn.contains(e.target)) {
+        sidebar.classList.remove("active");
+    }
+});
 /**
  * Cierra el menú
  */
