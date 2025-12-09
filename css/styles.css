@@ -23,6 +23,17 @@
     scroll-behavior: smooth;
 }
 
+#general {
+    overflow-x: hidden;
+    background-image: url(../img/ruled.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+figcaption {
+    text-align: justify;
+}
 footer {
     background-color: black;
     color: white;
