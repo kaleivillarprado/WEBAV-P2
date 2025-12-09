@@ -84,6 +84,30 @@ header > p {
     mix-blend-mode:color-dodge;
 }
 
+
+ #terceros {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-image: url(../img/calle1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header > p {
+    font-size: 12vw;
+    width: 2em;
+    margin-left: 1rem;
+    color:red;
+    mix-blend-mode:color-dodge;
+}
+
 img {
     width: 100%;
     vertical-align: middle;

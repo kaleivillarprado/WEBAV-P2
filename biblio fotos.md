@@ -11,4 +11,8 @@ https://www.pexels.com/search/madrid/
 
 CCC QUINTA: Laurent lopez Gardey
 SWINTON: Museo Directorio
-
+PLAZA: https://www.tripadvisor.es/Attraction_Review-g187514-d10726950-Reviews-Esta_es_Una_Plaza-Madrid.html#/media/10726950/
+ENCENDIA: https://www.revistaad.es/articulos/la-casa-encendida-cumple-20-anos-madrid
+MAGDALENA: https://carabanchel.net/entrevista-al-local-anarquista-magdalena-del-barrio-de-lavapies/
+PATO2 Y 3:https://unsplash.com/@rachf_
+PATO 4: https://unsplash.com/photos/a-peacock-standing-on-a-tree-branch-in-a-forest-OIhMCWgOYo4
