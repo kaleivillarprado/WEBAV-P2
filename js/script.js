@@ -1,4 +1,11 @@
 /*menú navegación */
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
 function closeMenu(){
     $("#menu > div > ul").css("left", "-100%");
 }

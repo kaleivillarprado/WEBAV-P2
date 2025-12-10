@@ -390,3 +390,28 @@ section > div > #items > div{
         width: 100%;
     }
 }
+/* ----------- Media Query: Mobile ----------- */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide navigation links by default */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #444;
+    width: 200px;
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 15px;
+    display: none;
+  }
+
+  /* Show menu when checkbox is checked */
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
