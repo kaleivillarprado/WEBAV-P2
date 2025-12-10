@@ -143,11 +143,11 @@ img {
     z-index: 2;
 }
 .centered {
-  position: absolute;
+  position:relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
   font-weight: 550;
   color: darkred;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -274,7 +274,7 @@ section > div > #items > div{
 }
 
 #modal > figure > * {
-    width: 40%;
+    width: 50%;
     max-width: 600px;
     align-self: center;
 }
@@ -333,35 +333,13 @@ section > div > #items > div{
         cursor: pointer;
     }
 
-    #quienessomos {
-        flex-direction: column;
-    }
-
-    #quienessomos > div:first-child,
-    #quienessomos > div:last-child {
-        width: 100%;
-    }
 
     section {
         width: 100%;
         padding: 2em;
         padding-top: 4em;
-    }
-
-    #disenios > div > figure,
-    #disenios > div > figure:nth-child(2) {
+        position: flex;
         flex-direction: column;
-        margin: 2em 0;
-    }
-
-    #disenios > div > figure > img,
-    #disenios > div > figure > figcaption {
-        width: 100%;
-    }
-
-    #contacto > iframe {
-        width: 100%;
-        height: 400px;
     }
 
     #modal > figure {
@@ -373,6 +351,51 @@ section > div > #items > div{
         width: 80%;
         margin: 1rem 0;
     }
+
+#items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+}
+
+#items > div {
+    width: 100%;
+    margin: 1em;
+    display:block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+#items > div > figure {
+    width: 100%;
+    position:inherit;
+    margin: 2em;
+    cursor: pointer;
+}
+
+#items > h4 {
+    color: red;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.centered {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: 550;
+  color: darkred;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  mix-blend-mode:hard-light;
+  font-size: 2em;
+  text-align: center;
+}
 }
 
 /* Media query para pantallas de menos de 600px */
