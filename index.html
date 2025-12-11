@@ -18,12 +18,19 @@
     <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
         <p class="titol">Madriz Local</p>
+        <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+
 
         <nav id="menu">
             <div>
@@ -84,7 +91,7 @@
             </figcaption>
           </figure>
           <figure onclick="abrirModal(this)"  data-aos="zoom-in">
-            <h4 class="centered">CCC LA QUINTA DEL SORDO</h4>
+            <h4 class="centered">LA QUINTA DEL SORDO</h4>
             <img src="img/quinta.jpg" alt="Evento en Interior de CCC Quinta del sordo">
             <figcaption>
               <p>A través del reconocimiento del valor artístico independiente el Centro de Creación Contemporánea Quinta del Sordo
@@ -119,7 +126,7 @@
         <div id="items">
           <div>
           <figure  onclick="abrirModal(this)"  data-aos="zoom-in" >
-            <h4 class="centered">DELISH VEGAN DONUTS</h4>
+            <h4 class="centered">DELISH  DONUTS</h4>
             <img src="img/delish.png" alt="Interior de Delish Vegan Donuts del local de Corredera de San Pablo" >
             <figcaption>
               <p>En plena Malasaña se encuentra Delish Vegan Donuts un local especializado en rosquillas veganas entre otros dulces. Destacan sus <strong>sabores
@@ -151,7 +158,6 @@
                 <img src="" alt="">
                 <figcaption></figcaption>
             </figure>
-            <i class="fa-solid fa-xmark" onclick="cerrarModal()"></i>
         </div>
     <section id="comercio">
             <h2>Comercio</h2>
@@ -189,6 +195,33 @@
             </div>
       </div>
     </section>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
     <div id="modal-imagen">
             <figure>
                 <img src="" alt="">

@@ -79,3 +79,15 @@ element.style {
 #menu > h1 > a {
     color: white;
 }
+
+function cargaGraficoBarras() {
+    // Datos para generar el gráfico, hay que definir las etiquetas y
+    // los datasets. Hay que definir un color para cada dataset
+    var datos = {
+        labels: ["2020", "2021", "2022+", "2023", "2024", ],
+        datasets: [{
+            label: "Pisos turísticos en Madrid",
+            backgroundColor: "#d81e1eff",
+            data: [19,597,  17,400, 15,763, 16,970, 22,435],
+        }],
+    };

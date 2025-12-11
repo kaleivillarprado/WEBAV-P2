@@ -85,6 +85,7 @@ header > p {
 }
 
 
+
  #terceros {
     width: 100%;
     height: 100vh;
@@ -107,6 +108,18 @@ header > p {
     color:red;
     mix-blend-mode:color-dodge;
 }
+#barras {
+    position: absolute;
+    top: 0;
+    left: 50%;          
+    transform: translateX(50%); 
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    mix-blend-mode: screen;
+    opacity: 0.7;
+}
+
 
 img {
     width: 100%;
@@ -198,6 +211,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
+    z-index: 5;
 }
 
 #menu > div:first-child > i,
@@ -292,7 +306,158 @@ section > div > #items > div{
     font-family: var(--fuente-titulos);
 }
 
-/* Media query para pantallas de menos de 750px */
+/* ------------------------------ */
+/*         MOBILE ≤ 480px          */
+/* ------------------------------ */
+@media (max-width: 480px) {
+
+    header > p {
+        font-size: 20vw;
+        width: auto;
+        margin-left: .5rem;
+    }
+
+    #menu {
+        padding: 0 .5em;
+    }
+
+    #menu > div:first-child > ul {
+        display: none; /* hide nav menu */
+    }
+
+    #menu > div:first-child > i {
+        display: block; /* show ☰ icon */
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    section {
+        width: 100%;
+        padding: 2em ;
+        align-items:flex-end
+    }
+
+    #items {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #items > div {
+        margin: 1em 0;
+        padding: 1em 0;
+    }
+
+    .centered {
+        font-size: 1.3em;
+    }
+
+    #madriz {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #madriz > div:first-child,
+    #madriz > div:last-child {
+        width: 100%;
+    }
+
+    #madriz > div:last-child > p {
+        font-size: 1.1rem;
+    }
+
+    #modal > figure {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #modal > figure > * {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* ------------------------------ */
+/*         TABLET ≤ 768px          */
+/* ------------------------------ */
+@media (max-width: 768px) {
+
+    header > p {
+        font-size: 15vw;
+    }
+
+     #menu > div:first-child > i {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu > div:first-child > ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        padding: 30% 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition-duration: 1s;
+    }
+
+    #menu > div:first-child > ul > li > a {
+        text-decoration: none;
+        font-size: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+    }
+
+    #menu > div:first-child > ul > li:last-child > i {
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+
+    section {
+        width: 90%;
+        padding: 3em 1.5em 1.5em;
+        flex-wrap: wrap;
+    }
+
+    #items > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #items > div > figure {
+        margin: 1em 0;
+    }
+
+    #madriz {
+        gap: .5em;
+        flex-direction: column;
+    }
+
+    #madriz > div:first-child,
+    #madriz > div:last-child {
+        width: 100%;
+    }
+
+    #modal > figure {
+        width: 85%;
+    }
+
+    #modal > figure > * {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 750px) {
 
     #menu > div:first-child > i {
@@ -340,19 +505,22 @@ section > div > #items > div{
         padding-top: 4em;
         position: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     #modal > figure {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     #modal > figure > * {
         width: 80%;
         margin: 1rem 0;
+        align-items: center;
     }
 
-#items{
+    #items{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -361,18 +529,19 @@ section > div > #items > div{
 
 }
 
-#items > div {
+    #items > div {
     width: 100%;
     margin: 1em;
-    display:block;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 2em 0;
+    align-items: center;
 }
 
-#items > div > figure {
+    #items > div > figure {
     width: 100%;
-    position:inherit;
+    position:center;
     margin: 2em;
     cursor: pointer;
 }
@@ -381,10 +550,10 @@ section > div > #items > div{
     color: red;
     text-align: center;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 .centered {
-  position:relative;
+  position:absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -398,43 +567,3 @@ section > div > #items > div{
 }
 }
 
-/* Media query para pantallas de menos de 600px */
-@media screen and (max-width: 600px) {
-    #disenios > div > figure {
-        flex: 100%;
-    }
-
-    #contacto > div {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    #contacto > div > * {
-        width: 100%;
-    }
-}
-/* ----------- Media Query: Mobile ----------- */
-@media (max-width: 768px) {
-
-  .hamburger {
-    display: block;
-  }
-
-  /* Hide navigation links by default */
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #444;
-    width: 200px;
-    flex-direction: column;
-    padding: 15px 0;
-    gap: 15px;
-    display: none;
-  }
-
-  /* Show menu when checkbox is checked */
-  .nav-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-}
