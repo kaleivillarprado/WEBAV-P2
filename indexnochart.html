@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Madriz Local</title>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" type="image/png">
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <p class="titol">Madriz Local</p>
+            <nav id="menu">
+            <div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="#madriz" onclick="closeMenu()">Madriz Local</a>
+                    </li>
+                    <li>
+                        <a href="#cultura" onclick="closeMenu()">Cultura</a>
+                    </li>
+                    <li>
+                        <a href="#gastro" onclick="closeMenu()">Gastro</a>
+                    </li>
+                    <li>
+                        <a href="#comercio" onclick="closeMenu()">Comercio</a>
+                    </li>
+                    <li>
+                        <a href="terceros-espacios.html" onclick="closeMenu()">Terceros Espacios</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <div id="general">
+    <section id="madriz">
+        <div>
+            <figure>
+                <img src="img/semaforo2.jpg" alt="Semáforo de Madriz en verde cuyo muñeco son dos mujeres" autoplay muted loop>
+            
+        </div>
+        <div>
+            <h2><span class="logo">Madriz<strong>Local</strong></span></h2>
+            <p>Madriz Local presenta una alternativa de  la ciudad centrada en lo local <strong>de verdad</strong> que ayuda al desarrollo
+            de proyectos independientes y autogestionados por la comunidad.</p>
+            <p>Desde Madriz Local nos posicionamos activamente <strong>contra la gentrificación</strong> sin sacrificar el ocio, enfocando nuestro proyecto de una manera
+            consciente con lo local, quienes lo habitan y su entorno.</p>
+        </div>
+    </section>
+    <section id="cultura">
+        <h2>Cultura</h2>
+         <p>Desde Madriz Local estamos comprometides con la preservación de <strong>espacios culturales alternativos</strong> en esta ciudad en la que grandes instituciones
+          monopolizan su acceso.</p>
+            <p>A continuación se presentan oportunidades de verse inmerse en la cultura madrileña a nivel local.</p>
+        <div id="items">
+        <div id="modal-imagen">
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in" >
+            <h4 class="centered">MATADERO MADRID</h4>
+            <img src="img/matadero.jpg" alt="Entrada de Matadero Madrid" >
+            <figcaption>
+              <p>Matadero Madrid es un complejo arquitectónico reformado en el que se realizan todo tipo de actividades
+                artísticas destacando <strong>proyecciones de cine, performance e instalaciones artísticas</strong>.</p>
+              <p href="https://mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in">
+            <h4 class="centered">LA QUINTA DEL SORDO</h4>
+            <img src="img/quinta.jpg" alt="Evento en Interior de CCC Quinta del sordo">
+            <figcaption>
+              <p>A través del reconocimiento del valor artístico independiente el Centro de Creación Contemporánea Quinta del Sordo
+              ofrece el espacio para la realización de actividades culturales como <strong>charlas, exposiciones o ferias.</strong></p>
+              <p href="https://quintadelsordo.com/en/">Web</p>
+            </figcaption>
+            </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in"> 
+            <h4 class="centered">SWINTON & GRANT</h4>
+            <img src="img/swinton.png" alt="Espacio de Libreria Grant">
+            <figcaption>
+              <p>Dos espacios en uno, librería especialmente seleccionada y galería de arte contemporáneo. Galería Swinton y Librería Grant ofrecen un programa cultural que
+              refleja la necesidad de <strong>expresión social</strong>.</p>
+              <p href="http://planet.swintonandgrant.com/?lang=en">Web</p>
+            </figcaption>
+          </figure>
+            </div>
+      </div>
+    </section>
+    <div id="modal-imagen">
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            
+        </div>
+   
+    <section id="gastro">
+        <h2>Gastro</h2>
+         <p>Con producto de proximidad, precios populares, espacios seguros y vegan friendly, en resumen <strong>sitios chulos</strong> para disfrutar.</p>
+            <p>Estos sitios son los favoritos del equipo de Madriz Local.</p>
+        <div id="items">
+          <div>
+          <figure  onclick="abrirModal(this)"  data-aos="zoom-in" >
+            <h4 class="centered">DELISH  DONUTS</h4>
+            <img src="img/delish.png" alt="Interior de Delish Vegan Donuts del local de Corredera de San Pablo" >
+            <figcaption>
+              <p>En plena Malasaña se encuentra Delish Vegan Donuts un local especializado en rosquillas veganas entre otros dulces. Destacan sus <strong>sabores
+              experimentales</strong> y de temporada.</p>
+              <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in">
+            <h4 class="centered">YERBABUENA</h4>
+            <img src="img/yerbabuena.png" alt="Exterior de Yerbabuena">
+            <figcaption>
+            <p>Con platos tradicionales íntegramente vegetarianos con amplias opciones veganas Yerbabuena ofrece <strong>cantidad y calidad</strong> en un espacio relajado en Madriz Centro.</p>
+            <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in"> 
+            <h4 class="centered">LOUKANITOS</h4>
+            <img src="img/loukanikos.png" alt="Interior Loukanikos">
+            <figcaption>
+            <p>Taberna de barrio entre Embajadores y Lavapiés con precios populares, opciones vegetales, <strong>bastante punk</strong> e íntegramente antifascista.</p>
+            <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div id="modal-imagen">
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+    <section id="comercio">
+            <h2>Comercio</h2>
+           <p>Comercios de Madriz que roban el corazón, de esos en los que te atienden con mimo, <strong>comercio ético</strong>,fuera de las grandes multinacionales 
+            que colonizan las calles.</p>
+            <p>Ideal para intentar consumir más éticamente en este capitalismo arrasante.</p>
+        <div id="items">
+          <div>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in" >
+            <h4 class="centered">DESPERATE LITERATURE</h4>
+            <img src="img/desperate.png" alt="Exterior Desperate Literature" >
+            <figcaption>
+            <p>Librería especializada en libros en ingles con opciones en castellano y francés para todos los niveles y foco en editoriales pequeñas y experimentales. 
+            <strong>Un fondo buítre les echó de su local de siempre</strong>, en el actual actual han realizado una conservación de los elementos históricos del edificio.</p>
+            <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in">
+            <h4 class="centered">MOLAR RECORDS</h4>
+            <img src="img/molar.png" alt="Escaparate pintado de Molar">
+            <figcaption>
+            <p>En el Molar se pueden encontrar <strong>joyas musicales en vinilo, fanzines varios</strong> y una gran selección de narrativa, ensayo y novela gráfica junto a un tablón en
+             el que se anuncian eventos creativos y musicales indie de la zona.</p>
+            <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+          <figure onclick="abrirModal(this)"  data-aos="zoom-in"> 
+            <h4 class="centered">LAS 3 DE PIAMONTE</h4>
+            <img src="img/piamonte.png" alt="Interior las 3 de PIAMONTE">
+            <figcaption>
+            <p> <strong>bastante punk</strong> e íntegramente antifascista.</p>
+            <p href="https://www.mataderomadrid.org/">Web</p>
+            </figcaption>
+          </figure>
+            </div>
+      </div>
+    </section>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+    <div id="modal-imagen">
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <i class="fa-solid fa-xmark" onclick="cerrarModal()"></i>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+  
+
+</body></html>
